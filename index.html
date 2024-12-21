@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Recipe Generator</title>
 </head>
 <body>
-<h1>Recipe Generator</h1>
+    <div class="container">
+        <header>
+<h1>Recipe Generator</h1></header>
+
 <div class="form-container">
-<form action="">
-<input type="text" placeholder="Enter ingredients or type of meal" autofocus required autocomplete="off" class="instructions" id="user-instructions">
+<form id="form-container">
+<input type="text" placeholder="Enter ingredients or type of meal"
+autofocus
+required
+autocomplete="off"
+class="instructions"
+id="user-instructions">
 <input type="submit" class="submit-button"> 
+
 </form>
 <div class="hint">i.e. carrots, beef or vegetarian, vegan</div>
+</div>
+<div class="recipe hidden" id="recipe">
+</div>
+
 <br>
 <footer>This AI project is coded by <a href="https://github.com/Ifriism" target="blank">Ida Friis-Mikkelsen</a> and <a href="https://github.com/Ifriism/AI-Recipe-Generator">open-sourced on GitHub</a> and is <a href="https://generate-recipe.netlify.app/">hosted on Netlify</a></footer>
+
 <script src="src/index.js"></script>
-</div>
-    
 </body>
 </html>

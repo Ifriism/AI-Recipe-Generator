@@ -1,3 +1,21 @@
+body {
+    background-color: #f9f7fe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #5c8d89;
+}
+
+.container {
+    margin: 120px auto;
+    max-width: 600px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
 h1 {
     text-align: center;
     font-weight: 800;
@@ -6,17 +24,23 @@ h1 {
     color: #272044;
 }
 
-body {
-    background-color: #f9f7fe;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .form-container {
     background-color: white;
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     padding: 15px 20px;
+}
+
+form {
+    display: flex;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 12px;
 }
 
 .instructions {
@@ -41,19 +65,17 @@ body {
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
-.hint {
-    line-height: 1.5;
-    margin-top: 5px;
-    opacity: 0.6;
-    font-size: 12px;
+.recipe {
+    font-size: 16px;
+    background-color: white;
+    padding: 20px;
+    line-height: 2;
+    border-left: 3px solid #5c8d89;
+    box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
 }
 
-form {
-    display: flex;
-}
-
-a {
-    color: #5c8d89;
+.hidden {
+    display: none;
 }
 
 footer {
@@ -61,3 +83,15 @@ footer {
     font-size: 13px;
     margin-top: 30px;
 }
+
+@keyframes blink-animation {
+    to {
+       visibility: hidden;
+    }
+    }
+    
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+         }
+         }
